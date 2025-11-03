@@ -6,7 +6,7 @@ from jwt.exceptions import InvalidTokenError
 from fastapi import HTTPException, status, Depends
 from typing import Annotated
 from schemas import UserToken
-import database as Db
+import database as db
 
 SECRET_KEY = "ASIRI_GIZLI_KEY"
 ALGORITHM = "HS256"
@@ -48,7 +48,7 @@ async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
     except InvalidTokenError as e:
         print(f"Invalid token error: {e}")  # Debug için
         raise credentials_exception
-    user = Db.get_user(username)
+    user = db.get_user(username)
     if user is None:
         print(f"User not found: {username}")  # Debug için
         raise credentials_exception

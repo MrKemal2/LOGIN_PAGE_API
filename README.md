@@ -1,6 +1,6 @@
-# FaceSecure (Login Page API)
+# Login Page API
 
-FaceSecure, FastAPI tabanlı güçlü bir arka uç (backend) ve Streamlit tabanlı kullanıcı dostu bir ön uç (frontend) ile geliştirilmiş, rol tabanlı erişim kontrolü sunan bir kimlik doğrulama sistemidir. 
+Login Page API, FastAPI tabanlı güçlü bir arka uç (backend) ve Streamlit tabanlı kullanıcı dostu bir ön uç (frontend) ile geliştirilmiş, rol tabanlı erişim kontrolü sunan bir kimlik doğrulama sistemidir. 
 
 Proje, güvenli JWT (JSON Web Token) kimlik doğrulaması kullanarak yönetici (Admin) ve normal kullanıcı (Üye) yetkilendirmelerini birbirinden ayırır ve MongoDB veritabanı entegrasyonu ile kullanıcı yönetimini sağlar.
 
@@ -71,7 +71,7 @@ Bash
 
 ```streamlit run streamlit_app.py```
 
-Bu komut, tarayıcınızda FaceSecure arayüzünü otomatik olarak açacaktır.
+Bu komut, tarayıcınızda uygulama arayüzünü otomatik olarak açacaktır.
 🔗 API Uç Noktaları (Endpoints)
 
 FastAPI otomatik dokümantasyon sağlar. Sunucu çalışırken `http://127.0.0.1:8000/docs` adresine giderek tüm API yollarını test edebilirsiniz.

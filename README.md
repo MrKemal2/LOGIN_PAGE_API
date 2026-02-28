@@ -48,21 +48,23 @@ Python ortamınızda gerekli kütüphaneleri yüklemek için terminalde şu komu
 pip install fastapi uvicorn pymongo streamlit requests pandas passlib[bcrypt] pyjwt pydantic
 ```
 
-2. Veritabanını Hazırlayın
+### 2. Veritabanını Hazırlayın
 
-    Sisteminizde MongoDB'nin kurulu ve arka planda çalışıyor olduğundan emin olun.
+   Sisteminizde MongoDB'nin kurulu ve arka planda çalışıyor olduğundan emin olun.
 
-    Proje varsayılan olarak `mongodb://localhost:27017/` adresine bağlanmaya çalışır ve denemeFaceSecure adlı bir veritabanı kullanır.
+   Proje varsayılan olarak `mongodb://localhost:27017/` adresine bağlanmaya çalışır ve denemeFaceSecure adlı bir veritabanı kullanır.
 
-3. API (Backend) Sunucusunu Başlatın
+### 3. API (Backend) Sunucusunu Başlatın
+   
+   Uygulamanın bulunduğu dizinde bir terminal açın ve FastAPI sunucusunu Uvicorn ile başlatın:
+   
 
-Uygulamanın bulunduğu dizinde bir terminal açın ve FastAPI sunucusunu Uvicorn ile başlatın:
-Bash
-
-```uvicorn main:app --reload```
+```bash
+uvicorn main:app --reload
+```
 
 Sunucu varsayılan olarak `http://127.0.0.1:8000` adresinde çalışmaya başlayacaktır.
-4. Arayüz (Frontend) Sunucusunu Başlatın
+### 4. Arayüz (Frontend) Sunucusunu Başlatın
 
 Yeni bir terminal sekmesi açın ve Streamlit uygulamasını başlatın:
 Bash
